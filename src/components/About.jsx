@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import Lightbox from './lightbox';
 
 const ABOUT_IMAGES = [
-  { src: './public/Images/aboutimage1.jpg', alt: 'Portrait session' },
-  { src: './public/Images/aboutimage2.jpg', alt: 'Outdoor fashion' },
-  { src: './public/Images/aboutimage3.jpg', alt: 'Studio lighting' },
-  { src: './public/Images/aboutimage4.jpg', alt: 'Event coverage' },
+  { src: '/Images/aboutimage1.jpg', alt: 'Portrait session' },
+  { src: '/Images/aboutimage2.jpg', alt: 'Outdoor fashion' },
+  { src: '/Images/aboutimage3.jpg', alt: 'Studio lighting' },
+  { src: '/Images/aboutimage4.jpg', alt: 'Event coverage' },
 ];
 
 export default function About(){

@@ -8,14 +8,14 @@ export default function Showcase() {
 
   // Directly adding the images
   const showcaseImages = [
-    { src: './public/Images/showcase1.jpg', alt: 'Brand Reel', caption: 'Brand introduction reel' },
-    { src: './public/Images/showcase2.jpg', alt: 'Model Shoot', caption: 'Fashion model photoshoot' },
-    { src: './public/Images/showcase3.jpg', alt: 'Event Highlight', caption: 'model shoot' },
-    { src: './public/Images/showcase4.jpg', alt: 'Studio Portrait', caption: 'Studio portrait photography' },
-    { src: './public/Images/showcase5.jpg', alt: 'Creative Edit', caption: 'Creative photo editing' },
-    { src: './public/Images/showcase6.jpg', alt: 'Fashion Series', caption: 'Fashion photoshoot series' },
-    { src: './public/Images/showcase7.jpg', alt: 'Product Scene', caption: 'Product scene photography' },
-    { src: './public/Images/showcase8.jpg', alt: 'Cinematic Frame', caption: 'Cinematic shot frame' }
+    { src: '/Images/showcase1.jpg', alt: 'Brand Reel', caption: 'Brand introduction reel' },
+    { src: '/Images/showcase2.jpg', alt: 'Model Shoot', caption: 'Fashion model photoshoot' },
+    { src: '/Images/showcase3.jpg', alt: 'Event Highlight', caption: 'model shoot' },
+    { src: '/Images/showcase4.jpg', alt: 'Studio Portrait', caption: 'Studio portrait photography' },
+    { src: '/Images/showcase5.jpg', alt: 'Creative Edit', caption: 'Creative photo editing' },
+    { src: '/Images/showcase6.jpg', alt: 'Fashion Series', caption: 'Fashion photoshoot series' },
+    { src: '/Images/showcase7.jpg', alt: 'Product Scene', caption: 'Product scene photography' },
+    { src: '/Images/showcase8.jpg', alt: 'Cinematic Frame', caption: 'Cinematic shot frame' }
   ];
 
   const openLightbox = (image) => {
