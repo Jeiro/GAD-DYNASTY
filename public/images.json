@@ -1,0 +1,6 @@
+[
+  { "src": "./public/Images/aboutimage1.jpg", "alt": "Portrait session", "caption": "Creative Portrait Shoot" },
+  { "src": "/images/shot2.jpg", "alt": "Outdoor fashion", "caption": "Outdoor Fashion Photography" },
+  { "src": "/images/shot3.jpg", "alt": "Studio lighting", "caption": "Studio Lighting Setup" },
+  { "src": "/images/shot4.jpg", "alt": "Event coverage", "caption": "Event Photography Coverage" }
+]

@@ -1,0 +1,19 @@
+@keyframes floaty { from{transform:translateY(0)} 50%{transform:translateY(-10px)} to{transform:translateY(0)} }
+@keyframes fadeUp { from{opacity:0; transform:translateY(16px)} to{opacity:1; transform:translateY(0)} }
+.reveal{opacity:0; transform:translateY(16px)}
+.reveal.in{animation: fadeUp .6s ease forwards}
+.blob{
+  position:absolute; filter:blur(70px); opacity:.45; pointer-events:none; z-index:-1;
+  background: var(--gradient);
+  border-radius:999px;
+}
+/* ---------- Slide-down animation for mobile drawer ---------- */
+@keyframes slideDown { from{opacity:0; transform:translateY(-20px)} to{opacity:1; transform:translateY(0)} }
+.nav-drawer { animation: slideDown .35s ease forwards; }
+
+/* ---------- Dimming overlay behind the menu ---------- */
+@keyframes fadeIn { from{opacity:0} to{opacity:1} }
+.nav-overlay{
+  position:fixed; inset:0; background:rgba(0,0,0,.45);
+  animation: fadeIn .25s ease forwards; z-index:1050;
+}

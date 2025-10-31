@@ -1,0 +1,77 @@
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+html{scroll-behavior:smooth}
+body{
+  margin:0; font-family:var(--font); color:var(--fg);
+  /* Continuous, banding-free gradient */
+  background:
+    radial-gradient(1200px 900px at 10% -20%, #3b1fa855 0%, transparent 45%),
+    radial-gradient(1200px 900px at 110% 0%, #a1145a44 0%, transparent 40%),
+    linear-gradient(180deg, #0b0b10 0%, #111222 60%, #0b0b10 100%);
+  background-attachment: fixed, fixed, fixed;
+}
+a{color:inherit; text-decoration:none}
+img{max-width:100%; display:block}
+button,input,textarea{font-family:inherit; color:inherit}
+.container{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+.section{padding:72px 0}
+.h1{font-size:clamp(2rem, 4vw + 1rem, 4rem); line-height:1.05; margin:0 0 14px}
+.h2{font-size:clamp(1.6rem, 1.8vw + 1rem, 2.6rem); line-height:1.1; margin:0 0 10px}
+.p{color:var(--muted); font-size:1.05rem}
+.btn{
+  display:inline-flex; align-items:center; gap:.6rem; padding:.9rem 1.2rem; border-radius:999px; border:1px solid transparent;
+  background:var(--gradient); color:#fff; font-weight:600; cursor:pointer; box-shadow:var(--shadow); transition:transform .15s ease, opacity .15s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn.outline{background:transparent; color:var(--fg); border-color:var(--ring); backdrop-filter: blur(6px)}
+.card{
+  background: linear-gradient(180deg, var(--card), transparent 120%); border:1px solid var(--ring); border-radius:var(--radius); box-shadow:var(--shadow);
+}
+.grid{display:grid; gap:22px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+@media (max-width:1024px){ .grid-3{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:768px){ .grid-3,.grid-2{grid-template-columns:1fr} }
+.visually-hidden{position:absolute !important; height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+/* Responsive helpers for 4-col grids */
+.grid-4{ grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 1200px){ .grid-4{ grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 900px){ .grid-4{ grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px){ .grid-4{ grid-template-columns: 1fr; } }
+.no-scroll{ overflow:hidden; }
+/* ---------- Slide-down animation for mobile drawer ---------- */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-drawer {
+  animation: slideDown 0.35s ease forwards;
+}
+/* Subtle noise to kill banding lines */
+body::after{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:-1;
+  background-image:
+    radial-gradient(circle at 25% 20%, rgba(255,255,255,.015) 0 2px, transparent 2px),
+    radial-gradient(circle at 60% 70%, rgba(255,255,255,.01) 0 1px, transparent 1px);
+  background-size: 3px 3px, 4px 4px;
+  opacity:.5;
+}
+
+/* Prevent background scrolling when menu is open */
+.no-scroll { overflow: hidden; }
+/* Lightbox styles */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.lightbox-overlay {
+  animation: fadeIn .3s ease;
+}

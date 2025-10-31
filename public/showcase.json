@@ -1,0 +1,10 @@
+[
+  { "src": "./public/Images/showcase1.jpg", "alt": "Brand Reel", "caption": "Brand introduction reel" },
+  { "src": "/images/reel2.jpg", "alt": "Model Shoot", "caption": "Fashion model photoshoot" },
+  { "src": "/images/reel3.jpg", "alt": "Event Highlight", "caption": "Event photography highlight" },
+  { "src": "/images/reel4.jpg", "alt": "Studio Portrait", "caption": "Studio portrait photography" },
+  { "src": "/images/reel5.jpg", "alt": "Creative Edit", "caption": "Creative video editing" },
+  { "src": "/images/reel6.jpg", "alt": "Fashion Series", "caption": "Fashion photoshoot series" },
+  { "src": "/images/reel7.jpg", "alt": "Product Scene", "caption": "Product scene photography" },
+  { "src": "/images/reel8.jpg", "alt": "Cinematic Frame", "caption": "Cinematic shot frame" }
+]
